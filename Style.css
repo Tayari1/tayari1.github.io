@@ -1,0 +1,31 @@
+
+h1 {color: green;
+	text-align: center;font-size: 50px;}
+
+p {color: black;font-size: 10px;}
+body {background-color:#f19729;} 
+body {background-image: url(BobM.jpg);
+background-size: contain; background-repeat: no-repeat;} 
+.title{margin-top: 900px}
+.image{margin:0 auto}
+@media (min-width: 600px) {
+	h1 {font-size:50px} 
+	p{font-size: 30px}
+	button:hover {
+		color: blue;
+		text-decoration: underline;}
+@media (min-width: @screen-sm-min)
+
+.menu li::before {
+	content:"*";
+	display: inline-block;
+	margin-right: 5px;
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background-color: none;}

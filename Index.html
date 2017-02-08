@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://cubcats.teachable.com/courses/101982/lectures/1487779 -->
+<html class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:32,height:32/https://teachable.com/images/favicons/favicon.ico" rel="icon" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:72,height:72/https://teachable.com/images/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:144,height:144/https://teachable.com/images/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:320,height:345/https://www.filepicker.io/api/file/73EQ2GoSACDx3iC2kLAg" rel="apple-touch-startup-image" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:640,height:690/https://www.filepicker.io/api/file/73EQ2GoSACDx3iC2kLAg" rel="apple-touch-startup-image" type="image/png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="3LSJvhGAerxdo3oS4KczStWO06yosHZBlGi7LgHya12MfZTLLS/XsufROojgomhCAM73Vw2JfOQXXkz/Rj2D0g==">
+<link href="./Index_files/school-css-1485735180-74533-68e4c7e6a46bd022917d62b79969cbbb.css" rel="stylesheet" data-turbolinks-track="true">
+<title>4. Create a simple "Hello World!' HTML Page
+See your changes! | Cubcats - Become a developer</title>
+<meta name="description" content="Introduction to the world of Web development focusing on HTML, CSS and best practices.">
+<link rel="canonical" href="http://cubcats.teachable.com/courses/101982/purchased">
+<meta property="og:title" content="Introduction to Web Development: Create and deploy a simple website with CSS &amp; HTML">
+<meta property="og:url" content="http://cubcats.teachable.com/courses/101982">
+<meta property="og:image" content="https://www.filepicker.io/api/file/blHEaIdQxmcJ7TYSi3YP">
+<meta property="og:description" content="Introduction to the world of Web development focusing on HTML, CSS and best practices.">
+<meta name="brand_video_player_color" content="#39949a">
+<meta name="site_title" content="Cubcats - Become a developer">
+<style>footer a, footer p {
+    color: #08d8cb;
+}
+
+.btn-primary {
+    background-color: #08d8cb;
+}
+
+.course-listing {
+    border-radius: 0;
+}
+
+.lecture-content .lecture-attachment {
+    max-width: 740px;
+}
+
+.course-listing .course-box-image-container .course-box-image {
+    height: 13em;
+    border-radius: 0;
+}
+</style>
+<script type="text/javascript" async="" src="./Index_files/ec.js.download"></script><iframe allowtransparency="true" scrolling="no" src="./Index_files/iframe_shim.html" style="height: 1px; left: -200px; position: absolute; top: -200px; width: 1px; direction: ltr;"></iframe><iframe allowtransparency="true" scrolling="no" src="./Index_files/iframe_shim(1).html" style="height: 1px; left: -200px; position: absolute; top: -200px; width: 1px; direction: ltr;"></iframe><iframe allowtransparency="true" scrolling="no" src="./Index_files/iframe_shim(2).html" style="height: 1px; left: -200px; position: absolute; top: -200px; width: 1px; direction: ltr;"></iframe><script type="text/javascript" async="" src="./Index_files/ecommerce.js.download"></script><script type="text/javascript" async="" src="./Index_files/analytics.js.download"></script><script async="" src="./Index_files/analytics.js.download"></script><script async="" id="analytics-js" type="text/javascript" src="./Index_files/analytics.js(1).download"></script><script type="text/javascript" async="" src="./Index_files/filestack.js.download"></script><script src="./Index_files/E-v1.js.download"></script>
+
+<script src="./Index_files/application-2b67cbdcfecd09d742c377bb1a403d223630e66192c7be1dc223daa3f1e643b3.js.download" data-turbolinks-track="true"></script><link href="./Index_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style></head><body data-no-turbolinks="true"><no-conversion-pixels></no-conversion-pixels>
+<script>
+    if(typeof ga != 'function') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    }
+    ga('create', 'UA-44397410-1', 'auto', {'name': 'fedoraTracker', 'allowLinker': true});
+    ga('fedoraTracker.require', 'linker');
+    ga('fedoraTracker.linker:autoLink', ['cubcats.teachable.com'] );
+    ga('fedoraTracker.require', 'ecommerce');
+    ga('fedoraTracker.require', 'ec');
+    ga('fedoraTracker.send', 'pageview');
+    </script>
+<link href="http://cubcats.teachable.com/blog/rss" rel="alternate" title="RSS Feed" type="application/rss+xml">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+    <meta http-content="IE=Edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+    <meta id="fedora-keys" data-env="production" data-stripe="pk_live_hkgvgSBxG4TAl3zGlXiB1KUX" data-track-all-ahoy="false" data-track-changes-ahoy="false" data-track-clicks-ahoy="false" data-track-sumbits-ahoy="false" data-taxamo="public_3adAdeo6B9dUufD_mJMEMkTXmxbK-vffcybxQEvrshk"><meta id="fedora-data" data-id="3384142" data-name="Tayari Bedeau-Wallace" data-email="tsbw@hotmail.co.uk" data-school-id="74533" data-src="null" data-joined-at="&quot;2017-02-06T09:39:14Z&quot;" data-wistia-identifier="74533:student:3384142" data-report-card="{&quot;101982&quot;:{&quot;course_id&quot;:101982,&quot;days_enrolled&quot;:0,&quot;percent_complete&quot;:0,&quot;class_period_id&quot;:null,&quot;completed_lecture_count&quot;:0,&quot;completed_lecture_ids&quot;:[],&quot;has_full_drip_access&quot;:&quot;false&quot;}}" data-course-ids="[101982]" data-role="student" data-last-four="null" data-completed-lecture-ids="[]" data-school-launched="true" data-preview="logged_in" data-turn-off-fedora-branding="false" data-plan-supports-whitelabeling="false" data-powered-by-text="Powered by" data-drip-enabled="false" data-asset-path="//https://d2oz8i5n9se8ej.cloudfront.net/assets/footer/teachable-logo-white-efd32576079839534d5b6e87bf4424e99b12624f854b2c500a4d3f0b6e2af46b.svg" data-course-id="101982" data-course-url="http://cubcats.teachable.com/courses/101982" data-lecture-id="2007147" data-lecture-url="http://cubcats.teachable.com/courses/101982/lectures/2007147"><meta id="analytics-keys" name="analytics" data-analytics="{&quot;Google Analytics&quot;:{&quot;trackingId&quot;:&quot;UA-85995031-1&quot;,&quot;enhancedEcommerce&quot;:true,&quot;sendUserId&quot;:true}}">
+    
+    <!-- Lecture Header -->
+<header class="full-width half-height is-signed-in">
+  <div class="lecture-left">
+    <a class="nav-icon-back" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/101982">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <div class="dropdown settings-dropdown">
+      <a href="http://cubcats.teachable.com/courses/101982/lectures/1487779#" class="nav-icon-settings dropdown-toggle" id="settings_menu" data-toggle="dropdown">
+        <i class="fa fa-cog"></i>
+      </a>
+      <ul class="dropdown-menu left-caret" role="menu" aria-labelledby="settings_menu">
+  <!-- AUTOPLAY -->
+  <li>
+    <div class="switch">
+      <input id="custom-toggle-autoplay" class="custom-toggle custom-toggle-round" type="checkbox">
+      <label for="custom-toggle-autoplay"></label>
+    </div>
+    Autoplay
+  </li>
+  <!-- AUTOCOMPLETE -->
+  <li>
+    <div class="switch">
+      <input id="custom-toggle-autocomplete" class="custom-toggle custom-toggle-round" type="checkbox">
+      <label for="custom-toggle-autocomplete"></label>
+    </div>
+    Autocomplete
+  </li>
+  <!-- PLAYER TYPE -->
+  <li>
+    <div class="pull-right">
+      <div class="switch-toggle well">
+        <input id="toggle_html5" name="custom-toggle-player" type="radio">
+        <label for="toggle_html5" onclick="">HTML5</label>
+        <input id="toggle_flash" name="custom-toggle-player" type="radio">
+        <label for="toggle_flash" onclick="">Flash</label>
+        <a class="btn btn-primary"></a>
+      </div>
+    </div>
+    Player
+  </li>
+  <!-- PLAYBACK SPEED -->
+  <li>
+    <div class="pull-right">
+      <div class="playback-speed">
+      </div>
+    </div>
+    Speed
+  </li>
+  <!-- QUALITY: not working yet -->
+ <!--  <li>
+    <div class="pull-right">
+      <div class="switch-toggle switch-3 well">
+        <input id="auto" name="quality" type="radio" checked>
+        <label for="auto" onclick="">Auto</label>
+        <input id="hd" name="quality" type="radio">
+        <label for="hd" onclick="">HD</label>
+        <input id="sd" name="quality" type="radio">
+        <label for="sd" onclick="">SD</label>
+        <a class="btn btn-primary"></a>
+      </div>
+    </div>
+    Quality
+  </li> -->
+</ul>
+    </div>
+    <a class="nav-icon-list show-xs hidden-sm hidden-md hidden-lg collapsed" role="button" data-toggle="collapse" href="http://cubcats.teachable.com/courses/101982/lectures/1487779#courseSidebar" aria-expanded="false" aria-controls="courseSidebar">
+        <i class="fa fa-list"></i>
+      </a>
+  </div>
+  
+  <div class="lecture-nav">
+    <a class="nav-btn" href="http://cubcats.teachable.com/courses/101982/lectures/1487779" id="lecture_previous_button">
+      <i class="fa fa-arrow-left"></i>
+      &nbsp;
+      <span class="nav-text">Previous Lecture</span>
+    </a>
+    <a class="nav-btn complete" href="http://cubcats.teachable.com/courses/101982/lectures/1487775" id="lecture_complete_button">
+      <span class="nav-text">Complete and continue</span>
+      &nbsp;
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  
+</header>
+
+    <div class="course-sidebar lecture-page collapse navbar-collapse navbar-sidebar-collapse" id="courseSidebar" aria-expanded="false">
+  <h2 style="padding-bottom: 84px">Introduction to Web Development: Create and deploy a simple website with CSS &amp; HTML</h2>
+  <!-- Course Progress -->
+  
+  <div class="course-progress lecture-page sticky">
+    <div class="progressbar">
+      <div class="progressbar-fill" style="min-width: 0%;"></div>
+    </div>
+    <div class="small course-progress-percentage">
+      <span class="percentage">
+        0%
+      </span>
+      COMPLETE
+    </div>
+  </div>
+  
+  <!-- Lecture list on courses page (enrolled user) -->
+
+  <div class="row lecture-sidebar">
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Introduction
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="2007147" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2007147" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2007147" id="sidebar_link_2007147">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. History of the World Wide Web
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1487775" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1487775" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1487775" id="sidebar_link_1487775">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                2. What is a Website?
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2007241" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2007241" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2007241" id="sidebar_link_2007241">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                3. Backend vs Frontend
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Introduction to HTML
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1487767" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1487767" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1487767" id="sidebar_link_1487767">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. What is HTML?
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1710466" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1710466" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1710466" id="sidebar_link_1710466">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                2. HTML Basics
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2036045" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036045" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036045" id="sidebar_link_2036045">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                3. HTML tags
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1487779" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1487779" class="section-item incomplete next-lecture">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1487779" id="sidebar_link_1487779">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                4. Create a simple "Hello World!' HTML Page
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1710473" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1710473" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1710473" id="sidebar_link_1710473">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                5. Adding a footer to the page
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1757611" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1757611" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1757611" id="sidebar_link_1757611">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                6. Navigation
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1757619" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1757619" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/1757619" id="sidebar_link_1757619">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                7. Sections
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2036146" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036146" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036146" id="sidebar_link_2036146">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                8. Forms
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2063919" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2063919" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2063919" id="sidebar_link_2063919">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                9. Images
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Introduction to CSS
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="2036148" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036148" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036148" id="sidebar_link_2036148">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. What is CSS?
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2036149" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036149" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036149" id="sidebar_link_2036149">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                2. CSS rules
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2091430" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091430" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091430" id="sidebar_link_2091430">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                3. Creating a stylesheet and linking HTML &amp; CSS
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2091647" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091647" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091647" id="sidebar_link_2091647">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                4. Basic CSS Properties
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2036151" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036151" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2036151" id="sidebar_link_2036151">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                5.  Internal vs External vs Inline CSS
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2091693" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091693" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091693" id="sidebar_link_2091693">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                6. CSS Classes
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2091696" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091696" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091696" id="sidebar_link_2091696">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                7. BEM &amp; OOCSS
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2106969" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2106969" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2106969" id="sidebar_link_2106969">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                8. CSS Media Queries
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2114163" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114163" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114163" id="sidebar_link_2114163">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                9. Pseudo Classes
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2114149" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114149" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114149" id="sidebar_link_2114149">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                10. Pseudo Elements
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2121796" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2121796" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2121796" id="sidebar_link_2121796">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                12. Font Awesome
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2114150" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114150" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114150" id="sidebar_link_2114150">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                13. Bootstrap
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Techniques and tools
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="2101653" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101653" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101653" id="sidebar_link_2101653">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. Responsive Design &amp; Mobile First
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2101645" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101645" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101645" id="sidebar_link_2101645">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                2. Google Chrome Dev Tools
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2101646" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101646" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101646" id="sidebar_link_2101646">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                3. Browser Testing
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Styling components
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="2091695" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091695" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2091695" id="sidebar_link_2091695">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. Styling the h1, h2 and h3
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2101628" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101628" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101628" id="sidebar_link_2101628">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                2. Styling the nav
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2101629" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101629" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2101629" id="sidebar_link_2101629">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                3. Styling the footer
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2114162" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114162" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114162" id="sidebar_link_2114162">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                4. Styling the Sections
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Intermediate Concepts
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="2107320" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2107320" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2107320" id="sidebar_link_2107320">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. Introduction to Sass
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2114155" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114155" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114155" id="sidebar_link_2114155">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                2. Formspree
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="2123365" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2123365" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2123365" id="sidebar_link_2123365">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                3. Multiple Page Website
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="101982">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Deploying
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="2114168" data-lecture-url="/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114168" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://cubcats.teachable.com/courses/create-a-simple-website-in-css-html-and-deploy-to-amazon-s3/lectures/2114168" id="sidebar_link_2114168">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                1. Deploying to Github Pages
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+  <!-- TODO REPLACE WITH GRAYSCALE TEACHABLE LOGO -->
+<!--   <a class='hidden-xs col-md-2' href='http://usefedora.com/?src=lecture-player' src="https://d2oz8i5n9se8ej.cloudfront.net/assets/teachable-logo-coolgrey-ec43de9a3c5ec7893f24334108d8ba7c59fd2ca74ccb07d7125e946e4dd5ec54.svg" id='powered-by-fedora' target='_blank'></a>
+  </a>
+ -->  
+</div>
+
+
+    <!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<div class="course-mainbar lecture-content">
+  <h2 id="lecture_heading" class="section-title" data-lecture-id="1487779" data-next-lecture-id="1710473" data-lecture-url="/courses/101982/lectures/1487779" data-next-lecture-url="/courses/101982/lectures/1710473" ,="" data-previous-lecture-url="/courses/101982/lectures/2036045" data-previous-lecture-id="2036045">
+    <i class="fa fa-file-text"></i>
+    &nbsp;
+    4. Create a simple "Hello World!' HTML Page
+</h2>
+
+  <!-- Attachment Blocks -->
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+      <div class="attachment-data"></div>
+<div class="lecture-text-container">
+<p></p><h4></h4>
+<h1>3. Create a Simple HTML Page</h1>
+<ol>
+	<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+	<li>Create a new folder in your <code>Documents</code> folder for this workshop, let’s call it <code>website</code>.</li>
+	<li>Now open the text editor and save an empty file called <code>index.html</code>, you can press <code>Cmd + S</code> (Mac) or <code>Ctrl + S</code> (WIndows)
+	<ul>
+		<li><code>index.html</code> is a special name and this is a file that the server will look for by default when a certain url is requested (link e.g. <code>&lt;a href="http://website.com"&gt;http://website.com&lt;/a&gt;</code>).</li>
+		<li>Each simple website is basically a “directory” of files, the <code>index.html</code> is the first file the web browser will access and from here you can specify how to reach other files via writing hyperlinks.</li>
+		<li>The default file can be configured to be called something else if required, but for the purpose of this workshop we will only concentrate on simple defaults.</li>
+	</ul></li>
+	<li>Type out the code below:</li>
+</ol><p></p>
+</div>
+
+    
+  </div>
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+      <div class="attachment-data"></div>
+<div class="lecture-text-container">
+<p></p><div>
+	<div class="cp_embed_wrapper"><iframe id="cp_embed_WRdPRy" src="./Index_files/WRdPRy.html" scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="WRdPRy" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+</div>
+<p>
+	<script async="" src="./Index_files/ei.js.download">
+	</script>
+</p><p></p>
+</div>
+
+    
+  </div>
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+      <div class="attachment-data"></div>
+<div class="lecture-text-container">
+<p></p><h2>See your changes!</h2>
+<p>Open your web browser, then press <code style="line-height: 1.6em;">Ctrl + O</code> (Windows) or <code style="line-height: 1.6em;">Cmd + O</code> (Mac) to open the file we have just created. You should see “Hello World” and the text you added as the paragraph, something like this:
+</p><p></p>
+</div>
+
+    
+  </div>
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+      <div class="attachment-data"></div>
+<div class="lecture-text-container">
+<p><img src="./Index_files/iykulYAiTkKBoqZhehXz" class="img-responsive"></p>
+</div>
+
+    
+  </div>
+
+
+<!-- Comments -->
+
+
+
+<div id="empty_box"></div>
+<!-- Scroll to current lecture link position in sidebar -->
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- No lecture footer in the new redesign -->
+
+    
+  
+
+<iframe name="filepicker_comm_iframe" id="filepicker_comm_iframe" src="./Index_files/saved_resource.html" style="display: none;"></iframe><iframe name="fpapi_comm_iframe" id="fpapi_comm_iframe" src="./Index_files/saved_resource(1).html" style="display: none;"></iframe></body></html>
